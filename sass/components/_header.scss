@@ -1,0 +1,93 @@
+/*Переходы на страницы*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav .item {
+  outline: 1px solid transparent;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color 250ms var(--o-transition-timing-function);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--address-color);
+}
+.site-nav .link.current {
+  color: var(--address-color);
+}
+.auth-nav {
+  display: flex;
+  outline: 1px solid transparent;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+.auth-nav .link {
+  color: var(--primery-text-color);
+  fill: #afb1b8;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color 250ms var(--o-transition-timing-function),
+    fill 250ms var(--o-transition-timing-function);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--address-color);
+  fill: var(--address-color);
+}
+.icon-mail {
+  margin-right: 10px;
+  margin-bottom: -1px;
+}
+.icon-tell {
+  margin-right: 10px;
+  margin-bottom: -2px;
+}
+.link.current {
+  position: relative;
+  color: var(--address-color);
+}
+.link.current::after {
+  content: '';
+  position: absolute;
+
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 4px;
+  background: var(--address-color);
+  border-radius: 2px;
+}

@@ -1,0 +1,13 @@
+@import './reset';
+body {
+  color: var(--primery-text-color);
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

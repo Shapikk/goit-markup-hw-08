@@ -1,0 +1,29 @@
+.logo {
+  color: var(--address-color);
+
+  font-family: Raleway, cursive;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  margin-right: 93px;
+}
+span.studio {
+  color: var(--title-text-color);
+}
+
+/*Footer logo*/
+.logo-two {
+  color: var(--address-color);
+
+  font-family: Raleway, cursive;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
+}
+span.studio-two {
+  color: #ffffff;
+}
