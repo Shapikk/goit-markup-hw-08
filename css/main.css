@@ -222,6 +222,20 @@ span.studio-two {
   background-size: cover;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
 .hero-title {
   color: #ffffff;
   font-weight: 900;
@@ -332,6 +346,18 @@ span.studio-two {
   padding: 0;
   margin: 0;
   display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .site {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .site {
+    flex-wrap: wrap;
+  }
 }
 
 .site__list {
@@ -491,6 +517,12 @@ span.studio-two {
   padding: 0;
   margin: 0;
   display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .container__emblem {
+    flex-wrap: wrap;
+  }
 }
 
 .emblem-list {

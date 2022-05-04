@@ -9,6 +9,16 @@
     url(../images/Img-1.2—копия.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 769px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 .hero-title {
   color: #ffffff;
@@ -25,6 +35,7 @@
     line-height: 1.6;
     text-align: center;
   }
+
   @media screen and (min-width: 769px) {
     font-size: 26px;
     line-height: 1.6;

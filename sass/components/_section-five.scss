@@ -4,6 +4,13 @@
   padding: 0;
   margin: 0;
   display: flex;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 769px) {
+  }
 }
 .emblem-list {
   margin-right: 0;
