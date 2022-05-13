@@ -37,20 +37,6 @@ body {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 /*Components*/
 /*Переходы на страницы*/
 .header {
@@ -192,74 +178,51 @@ span.studio-two {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 /* Секция 1  */
 .hero {
   background-color: #2f303a;
   transform: perspective(normal);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /*padding-top: 200px;
+  padding-bottom: 200px;*/
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-1.2—копия.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (min-width: 480px) {
-  .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
 }
 
 @media screen and (min-width: 769px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
 .hero-title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3;
+  font-size: 26px;
+  line-height: 1, 6px;
+  /*font-size: 44px;
+  line-height: 1.3;*/
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .hero-title {
-    font-size: 26px;
-    line-height: 1.6;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .hero-title {
-    font-size: 26px;
-    line-height: 1.6;
-    text-align: center;
+    font-size: 44px;
+    line-height: 1.3;
   }
 }
 
@@ -346,18 +309,6 @@ span.studio-two {
   padding: 0;
   margin: 0;
   display: flex;
-}
-
-@media screen and (min-width: 480px) {
-  .site {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .site {
-    flex-wrap: wrap;
-  }
 }
 
 .site__list {
@@ -517,12 +468,6 @@ span.studio-two {
   padding: 0;
   margin: 0;
   display: flex;
-}
-
-@media screen and (min-width: 480px) {
-  .container__emblem {
-    flex-wrap: wrap;
-  }
 }
 
 .emblem-list {

@@ -1,0 +1,9 @@
+@mixin mobile {
+  width: 480px;
+}
+@mixin tablet {
+  width: 769px;
+}
+@mixin dekstop {
+  width: 1200px;
+}
