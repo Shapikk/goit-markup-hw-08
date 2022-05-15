@@ -940,7 +940,7 @@ textarea {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 768px) {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -960,7 +960,7 @@ textarea {
   margin-top: 0;
 }
 
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 768px) {
   .portfolio__scroll {
     display: flex;
     flex-wrap: wrap;
