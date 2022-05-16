@@ -61,17 +61,23 @@
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
-  padding-bottom: 30px;
-  @media screen and (min-width: 1200px) {
-    margin: 0;
+}
 
-    &:not(:last-child) {
-      margin-right: 0;
-    }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .site__about {
+    padding-bottom: 30px;
+  }
+  &:nth-child(4) {
+    padding-bottom: 0;
   }
 }
-.site__about:nth-child(4) {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .site__about {
+    margin: 0;
+  }
+  &:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .container__list {
