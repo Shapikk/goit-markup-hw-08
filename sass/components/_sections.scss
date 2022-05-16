@@ -67,9 +67,9 @@
   .site__about {
     padding-bottom: 30px;
   }
-  &:nth-child(4) {
-    padding-bottom: 0;
-  }
+}
+.site__about:not(:last-child) {
+  padding-bottom: 0;
 }
 @media screen and (min-width: 1200px) {
   .site__about {
@@ -88,7 +88,7 @@
 }
 
 .container__image {
-  margin-right: 30px;
+  margin-bottom: 0;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -96,9 +96,16 @@
 
   position: relative;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
+}
+.container__image:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .site__box {
