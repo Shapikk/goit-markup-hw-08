@@ -160,7 +160,21 @@
             <div class="container">
                 <h2 class="container__name">Наша команда</h2>
                 <ul class="container__site">
-                    <li class="container__image"><img src="./images/img(3).jpg" alt="Игорь Демьяненко" width="270" height="260">
+                    <li class="container__image">
+                        <picture>
+                            <source srcset="./images/resume/misha-dek-1x.jpg 1x,
+                            ./images/resume/misha-dek-2x.jpg 2x" 
+                            media="(min-width:1200px)" 
+                            type="images/jpeg" />
+                            <source srcset="./images/resume/misha1x-tab.jpg   1x,
+                            ./images/resume/misha2x-tab.jpg 2x" 
+                            media="(min-width:768px)" 
+                            type="images/jpeg" />
+                            <source srcset="./images/resume/misha2x-mob.jpg 2x" 
+                            media="(max-width:767px)" 
+                            type="images/jpeg" />
+                        <img src="./images/img(3).jpg" alt="Игорь Демьяненко" width="270">
+                        </picture>
                         <div class="container__div">
                             <h3 class="div__names">Игорь Демьяненко</h3>
                             <p class="div__about">Product Designer</p>
@@ -194,7 +208,24 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="container__image"><img src="./images/img(4).jpg" alt="Ольга Репина" width="270" height="260">
+                    <li class="container__image">
+                        <picture>
+                            <source 
+                            srcset="./images/resume/vivi-dek-1x.jpg 1x,
+                            ./images/resume/vivi-dek-2x.jpg 2x" 
+                            media="(min-width:1200px)" 
+                            type="images/jpeg"/>
+                            <source 
+                            srcset="./images/resume/vivi1x-tab.jpg   1x,
+                            ./images/resume/vivi-tab.jpg 2x" 
+                            media="(min-width:768px)" 
+                            type="images/jpeg" />
+                            <source 
+                            srcset="./images/resume/vivi2x-mob.jpg 2x" 
+                            media="(max-width:767px)" 
+                            type="images/jpeg" />
+                            <img src="./images/img(4).jpg" alt="Ольга Репина" width="270">
+                            </picture>
                         <div class="container__div">
                             <h3 class="div__names">Ольга Репина</h3>
                             <p class="div__about">Frontend Developer</p>
@@ -229,7 +260,24 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="container__image"><img src="./images/img(5).jpg" alt="Николай Тарасов" width="270" height="260">
+                    <li class="container__image">
+                        <picture>
+                            <source 
+                            srcset="./images/resume/dan-dek-1x.jpg 1x,
+                            ./images/resume/dan-dek-2x.jpg 2x" 
+                            media="(min-width:1200px)" 
+                            type="images/jpeg" />
+                            <source 
+                            srcset="./images/resume/dan1x-tab.jpg   1x,
+                            ./images/resume/dan2x-tab.jpg 2x" 
+                            media="(min-width:768px)" 
+                            type="images/jpeg" />
+                            <source 
+                            srcset="./images/resume/dan2x-mob.jpg 2x" 
+                            media="(max-width:767px)" 
+                            type="images/jpeg" />
+                            <img src="./images/img(5).jpg" alt="Николай Тарасов" width="270">
+                        </picture>
                         <div class="container__div">
                             <h3 class="div__names">Николай Тарасов</h3>
                             <p class="div__about">Marketing</p>
@@ -263,7 +311,24 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="container__image"><img src="./images/img(6).jpg" alt="Михаил Ермаков" width="270" height="260">
+                    <li class="container__image">
+                        <picture>
+                            <source 
+                            srcset="./images/resume/joke-dek-1x.jpg 1x,
+                            ./images/resume/joke-2x.jpg 2x" 
+                            media="(min-width:1200px)" 
+                            type="images/jpeg" />
+                            <source 
+                            srcset="./images/resume/joke1x-tab.jpg   1x,
+                            ./images/resume/joke2x-tab.jpg 2x" 
+                            media="(min-width:768px)" 
+                            type="images/jpeg" />
+                            <source 
+                            srcset="./images/resume/joke2x-mob.jpg 2x" 
+                            media="(max-width:767px)" 
+                            type="images/jpeg" />
+                            <img src="./images/img(6).jpg" alt="Михаил Ермаков" width="270" >
+                        </picture>
                         <div class="container__div">
                             <h3 class="div__names">Михаил Ермаков</h3>
                             <p class="div__about">UI Designer</p>
@@ -364,7 +429,7 @@
                     <li class="mail-tell"><a href="tel:+380991111111" class="link">+38 099-111-11-11</a></li>
                 </ul>
             </address></div>
-<div style="margin-right: 93px;" >
+<div >
     <h2 class="follow">ПРИСОЕДИНЯЙТЕСЬ</h2>
     <ul class="follow__list">
         <li class="follow__nav">
@@ -403,5 +468,6 @@
         </div>       
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>

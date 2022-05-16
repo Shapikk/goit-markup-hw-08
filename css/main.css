@@ -44,7 +44,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .section-titles {
     display: none;
   }
@@ -186,9 +186,15 @@ span.studio-two {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  /*width: 100%;*/
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -315,8 +321,10 @@ span.studio-two {
 }
 
 /* Секция 2,3 */
-.section-title {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .section-title {
+    padding-bottom: 0;
+  }
 }
 
 .delete {
@@ -339,7 +347,7 @@ span.studio-two {
   /*display: flex;*/
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .site {
     display: flex;
     flex-wrap: wrap;
@@ -353,14 +361,10 @@ span.studio-two {
 }
 
 .site__list {
-  /*width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }*/
   width: 450px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .site__list {
     width: 354px;
   }
@@ -384,7 +388,7 @@ span.studio-two {
   text-align: center;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .site__name {
     text-align: left;
   }
@@ -394,11 +398,7 @@ span.studio-two {
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
-  /*margin: 0;
-
-  &:not(:last-child) {
-    margin-right: 0;
-  }*/
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -408,6 +408,10 @@ span.studio-two {
   .site__about:not(:last-child) {
     margin-right: 0;
   }
+}
+
+.site__about:nth-child(4) {
+  padding-bottom: 0;
 }
 
 .container__list {
@@ -479,7 +483,7 @@ span.studio-two {
   /*display: flex;*/
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .container__site {
     display: flex;
     flex-wrap: wrap;
@@ -556,7 +560,7 @@ span.studio-two {
   /*display: flex;*/
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .container__emblem {
     display: flex;
     flex-wrap: wrap;
