@@ -11,8 +11,14 @@
   border-bottom: 1px solid #ececec;
 }
 .site-nav {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
   @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
   }
 }
 .site-nav .item {
@@ -44,9 +50,17 @@
   color: var(--address-color);
 }
 .auth-nav {
-  display: flex;
   outline: 1px solid transparent;
   margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .auth-nav .item + .item {
   margin-left: 50px;
