@@ -1178,4 +1178,12 @@ textarea {
     height: 796px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    width: 100%;
+    box-shadow: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
