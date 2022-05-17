@@ -7,6 +7,11 @@
   line-height: 1.19;
   text-decoration: none;
   margin-right: 93px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+  }
 }
 span.studio {
   color: var(--title-text-color);

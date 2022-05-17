@@ -72,13 +72,22 @@
   outline: transparent;
   z-index: 98;
 }
-.header-button .icon-cl {
+.header-button .icon-op {
   display: none;
 }
 
-.header-button.is-open.icon-cl {
+.header-button.is-open .icon-op {
   display: block;
 }
-.header-button.is-open.icon-op {
+.header-button.is-open .icon-cl {
   display: none;
+}
+.header-button {
+  fill: #212121;
+  transition: fill 250ms var(--o-transition-timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--address-color);
+  }
 }
