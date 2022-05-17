@@ -59,35 +59,3 @@
   margin-left: 10px;
   margin-bottom: -5px;
 }
-
-.header-button {
-  position: fixed;
-  top: 10px;
-  right: 15px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: transparent;
-  outline: transparent;
-  z-index: 98;
-}
-.header-button .icon-op {
-  display: none;
-}
-
-.header-button.is-open .icon-op {
-  display: block;
-}
-.header-button.is-open .icon-cl {
-  display: none;
-}
-.header-button {
-  fill: #212121;
-  transition: fill 250ms var(--o-transition-timing-function);
-
-  &:hover,
-  &:focus {
-    fill: var(--address-color);
-  }
-}

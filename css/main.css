@@ -322,40 +322,6 @@ span.studio-two {
   margin-bottom: -5px;
 }
 
-.header-button {
-  position: fixed;
-  top: 10px;
-  right: 15px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: transparent;
-  outline: transparent;
-  z-index: 98;
-}
-
-.header-button .icon-op {
-  display: none;
-}
-
-.header-button.is-open .icon-op {
-  display: block;
-}
-
-.header-button.is-open .icon-cl {
-  display: none;
-}
-
-.header-button {
-  fill: #212121;
-  transition: fill 250ms var(--o-transition-timing-function);
-}
-
-.header-button:hover, .header-button:focus {
-  fill: var(--address-color);
-}
-
 /* Секция 2,3 */
 @media screen and (min-width: 1200px) {
   .section-title {
@@ -1153,18 +1119,63 @@ textarea {
   transform: translateY(0);
 }
 
-.menu-container {
+.header-button {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+  z-index: 98;
+}
+
+@media screen and (min-width: 768px) {
+  .header-button {
+    display: none;
+  }
+}
+
+.header-button .icon-op {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 796px;
+}
+
+.header-button.is-open .icon-op {
+  display: block;
+}
+
+.header-button.is-open .icon-cl {
+  display: none;
+}
+
+.header-button {
+  fill: #212121;
+  transition: fill 250ms var(--o-transition-timing-function);
+}
+
+.header-button:hover, .header-button:focus {
+  fill: var(--address-color);
+}
+
+.menu-container {
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 .menu-container.is-open {
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
