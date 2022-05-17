@@ -186,7 +186,6 @@ span.studio-two {
 .container {
   margin-left: auto;
   margin-right: auto;
-  /*width: 100%;*/
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -578,11 +577,22 @@ span.studio-two {
   fill: var(--icon-colors);
 }
 
+/*img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
 /*Секция 5*/
 .container__emblem {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: -15px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -600,12 +610,19 @@ span.studio-two {
   }
 }
 
-.emblem-list {
-  margin-right: 0;
+@media screen and (max-width: 768px) {
+  .emblem-list {
+    margin: 15px;
+  }
 }
 
-.emblem-list:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .emblem-list {
+    margin-right: 0;
+  }
+  .emblem-list:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .emblem-list__li {

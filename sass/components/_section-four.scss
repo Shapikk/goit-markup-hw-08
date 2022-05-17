@@ -88,3 +88,13 @@
     fill: var(--icon-colors);
   }
 }
+/*img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
