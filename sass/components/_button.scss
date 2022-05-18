@@ -41,6 +41,12 @@
 .portfolio__buttons:nth-child(-n + 4) {
   margin-right: 8px;
 }
+.portfolio__buttons:nth-child(-n + 3) {
+  padding-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
 /*Кнопка футера*/
 
 .follow__button {

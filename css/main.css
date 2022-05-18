@@ -110,10 +110,8 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav .item {
-    outline: 1px solid transparent;
-  }
+.site-nav .item {
+  outline: 1px solid transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -457,6 +455,16 @@ span.studio-two {
 
 .portfolio__buttons:nth-child(-n + 4) {
   margin-right: 8px;
+}
+
+.portfolio__buttons:nth-child(-n + 3) {
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__buttons:nth-child(-n + 3) {
+    padding-bottom: 0;
+  }
 }
 
 /*Кнопка футера*/
@@ -1230,8 +1238,9 @@ textarea {
 
 /* Портфолио*/
 .portfolio {
-  /*display: flex;
-  justify-content: center;*/
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -1352,7 +1361,7 @@ textarea {
   background-color: transparent;
   border: transparent;
   outline: transparent;
-  z-index: 98;
+  z-index: 1000;
 }
 
 @media screen and (min-width: 768px) {
@@ -1391,7 +1400,7 @@ textarea {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .menu-container {
     display: none;
     position: absolute;

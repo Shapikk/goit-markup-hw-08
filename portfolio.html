@@ -18,29 +18,51 @@
 <body>
     <!--Шапка сайта-->
     <header>
-        <div class="header-top container">
-            <a class="logo" href="index.html">Web<span class="studio">Studio</span></a>
-            <!--Переходы на страницы-->
-            <nav>
-                <ul class="header site-nav list">
-                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
+        <div class="header header-top container">
+            <a class="logo" href="/index.html">Web<span class="studio">Studio</span></a>
+            <button type="button" class="header-button is-open" aria-expanded="false" data-menu-button>
+                <svg width="40" height="40">
+                    <use class="icon-cl" href="./images/symbol-defs.svg#icon-close"></use>
+                    <use class="icon-op" href="./images/menu.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <!--Переходы на страницы -->
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav>
+                    <ul class="header site-nav list">
+                        <li class="item"><a href="./index.html" class="link">Студия</a></li>
+                        <li class="item"><a href="" class="link current">Портфолио</a></li>
+                        <li class="item"><a href="" class="link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <!--Мобильное модальное окно-->
+                <div class="modal-contact">
+                    <ul class="header reserw list">
+                        <li class="items-tell"><a href="tel:+380961111111" class="tell">+38-096-111-11-11</a></li>
+                        <li class="items-mail"><a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="nav list">
+                        <li class="item-list"><a href="" class="click">Instagram</a></li>
+                        <li class="item-list"><a href="" class="click">Twitter</a></li>
+                        <li class="item-list"><a href="" class="click">Facebook</a></li>
+                        <li class="item-list"><a href="" class="click">Linkedin</a></li>
+                    </ul>
+                </div>
+                <!--Переходы на страницы-->
+                <ul class="header auth-nav list">
+                    <li class="item"><a href="mailto:info@devstudio.com" class="link">
+                            <svg class="icon-mail" width="16" height="12">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="item"><a href="tel:+380961111111" class="link">
+                            <svg class="icon-tell" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38-096-111-11-11</a></li>
                 </ul>
-            </nav>
-            <ul class="header auth-nav list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">
-                    <svg class="icon-mail" width="16" height="12">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>
-                    </svg>
-                    info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">
-                    <svg class="icon-tell" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38-096-111-11-11</a></li>
-            </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -128,8 +150,8 @@
     <!--Footer-->
     <footer class="footer">
         <div class="container footer__site">
-            <div style="margin-right: 40px;"><a class="logo-two" href="/index.html">Web<span
-                        class="studio-two">Studio</span></a>
+            <div class="footer__addres">
+                <a class="logo-two" href="/index.html">Web<span class="studio-two">Studio</span></a>
                 <address>
                     <p class="address">г. Киев, пр-т Леси Украинки,26</p>
                     <ul class="address__site list">
@@ -138,7 +160,7 @@
                     </ul>
                 </address>
             </div>
-            <div style="margin-right: 93px;">
+            <div class="follow-container">
                 <h2 class="follow">ПРИСОЕДИНЯЙТЕСЬ</h2>
                 <ul class="follow__list">
                     <li class="follow__nav">
@@ -169,7 +191,7 @@
             </div>
             <div>
                 <h2 class="follow">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-                <form autocomplete="on" novalidate>
+                <form class="form-label" autocomplete="on" novalidate>
                     <label class="follow__label"><input class="input" type="email" name="email" placeholder="E-mail" />
                     </label>
                     <button class="follow__button" type="submit">Подписаться
@@ -180,6 +202,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/header.js"></script>
 </body>
 </html>
 
