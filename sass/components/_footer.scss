@@ -38,6 +38,12 @@
   margin: 0;
   text-align: center;
 }
+.address__site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+}
 .address__site .link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -45,7 +51,6 @@
   line-height: 1.7;
   font-style: normal;
   margin-bottom: 60px;
-  text-align: center;
 
   transition: color 250ms var(--o-transition-timing-function);
 }
@@ -59,6 +64,9 @@
 .mail-tell:not(:last-child) {
   margin-bottom: 9px;
 }
+.follow-container {
+  padding-top: 60px;
+}
 .follow {
   color: #ffffff;
   font-style: normal;
@@ -67,10 +75,13 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .follow__list {
   display: flex;
+  justify-content: center;
   padding-left: 0;
   list-style: none;
   margin: 0;
@@ -107,7 +118,9 @@
 }
 
 /* Footer подпишись */
-
+.follow__label {
+  padding-bottom: 20px;
+}
 .follow__label input {
   width: 358px;
   height: 50px;
@@ -119,4 +132,9 @@
   color: var(--primary-text-color);
   padding-left: 16px;
   outline: transparent;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
