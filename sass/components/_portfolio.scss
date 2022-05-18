@@ -29,9 +29,13 @@
 }
 
 .portfolio__item {
-  width: 370px;
+  width: 450px;
   margin-right: 30px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
 }
 
 .portfolio__item:nth-child(3n) {
@@ -71,6 +75,11 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+@media screen and (max-width: 767px) {
+  img {
+    width: 100%;
+  }
 }
 
 /* Анимация */
