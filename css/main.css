@@ -510,13 +510,13 @@ span.studio-two {
   list-style: none;
   padding: 0;
   margin: 0;
-  /*display: flex;*/
 }
 
 @media screen and (min-width: 768px) {
   .site {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -589,11 +589,12 @@ span.studio-two {
 }
 
 .container__image {
-  margin-bottom: 0;
+  margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   position: relative;
+  /*min-width (768px*/
 }
 
 @media screen and (min-width: 1200px) {
@@ -605,8 +606,14 @@ span.studio-two {
   }
 }
 
-.container__image:not(:last-child) {
-  margin-bottom: 30px;
+.container__image:nth-child(4) {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__image:nth-child(4) {
+    margin-bottom: 30px;
+  }
 }
 
 .site__box {
@@ -663,6 +670,7 @@ span.studio-two {
   .container__site {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -745,7 +753,19 @@ span.studio-two {
   width: 100%;
   height: auto;
 } */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   img {
     width: 100%;
   }
@@ -764,6 +784,7 @@ span.studio-two {
   .container__emblem {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -773,9 +794,15 @@ span.studio-two {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .emblem-list {
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emblem-list:nth-child(-n + 3) {
+    margin-bottom: 30px;
   }
 }
 
@@ -789,7 +816,6 @@ span.studio-two {
 }
 
 .emblem-list__li {
-  /*width: 170px;*/
   height: 92px;
   width: 210px;
   border: 1px solid #afb1b8;
@@ -805,6 +831,12 @@ span.studio-two {
 .emblem-list__li:hover, .emblem-list__li:focus {
   border: 1px solid #2196f3;
   fill: var(--address-color);
+}
+
+@media screen and (min-width: 768px) {
+  .emblem-list__li {
+    width: 226px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
