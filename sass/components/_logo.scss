@@ -13,7 +13,11 @@
   @media screen and (max-width: 1199px) {
     margin-right: 88px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 118px;
+  }
 }
+
 span.studio {
   color: var(--title-text-color);
 }
@@ -30,6 +34,9 @@ span.studio {
   margin-bottom: 20px;
   display: block;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 span.studio-two {
