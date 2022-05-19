@@ -34,7 +34,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -72,8 +73,8 @@
     text-decoration: none;
 
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /*padding-top: 21px;
+    padding-bottom: 21px;*/
   }
 }
 .site-nav .link:hover,
@@ -87,10 +88,13 @@
   outline: 1px solid transparent;
   margin-left: auto;
   display: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 21px;
+    padding-bottom: 11px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -99,6 +103,9 @@
 }
 .auth-nav .item + .item {
   margin-left: 50px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 .auth-nav .link {
   color: var(--primery-text-color);
@@ -109,12 +116,22 @@
   text-decoration: none;
 
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /*padding-top: 21px;
+  padding-bottom: 21px;*/
 
   transition: color 250ms var(--o-transition-timing-function),
     fill 250ms var(--o-transition-timing-function);
+
+  &:nth-child(1) {
+    padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--address-color);
@@ -128,7 +145,24 @@
   margin-right: 10px;
   margin-bottom: -2px;
 }
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 768px) {
+  .link.current {
+    position: relative;
+    color: var(--address-color);
+  }
+  .link.current::after {
+    content: '';
+    position: absolute;
+
+    left: 0;
+    bottom: -38px;
+    width: 100%;
+    height: 4px;
+    background: var(--address-color);
+    border-radius: 2px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .link.current {
     position: relative;
     color: var(--address-color);
@@ -144,8 +178,6 @@
     background: var(--address-color);
     border-radius: 2px;
   }
-}
-@media screen and (min-width: 768px) {
 }
 
 .reserw {

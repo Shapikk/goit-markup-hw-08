@@ -10,7 +10,8 @@
 
   padding-top: 16px;
   padding-bottom: 16px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
+    margin-right: 88px;
   }
 }
 span.studio {
@@ -30,6 +31,7 @@ span.studio {
   display: block;
   text-align: center;
 }
+
 span.studio-two {
   color: #ffffff;
 }
