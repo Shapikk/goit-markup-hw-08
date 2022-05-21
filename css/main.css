@@ -54,7 +54,7 @@ body {
 /*Переходы на страницы*/
 .header {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   /*align-items: center;*/
   position: relative;
 }
@@ -80,6 +80,7 @@ body {
   .item {
     padding-left: 0;
     padding-bottom: 0;
+    margin-left: auto;
   }
 }
 
@@ -146,8 +147,6 @@ body {
     line-height: 1.14;
     text-decoration: none;
     display: block;
-    /*padding-top: 21px;
-    padding-bottom: 21px;*/
   }
 }
 
@@ -162,7 +161,6 @@ body {
 
 .auth-nav {
   outline: 1px solid transparent;
-  margin-left: auto;
   display: none;
 }
 
@@ -170,9 +168,6 @@ body {
   .auth-nav {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-top: 21px;
-    padding-bottom: 11px;
   }
 }
 
@@ -184,13 +179,20 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav .item {
+    margin-left: 71px;
+  }
+}
+
 .auth-nav .item + .item {
   margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-nav .item + .item {
-    margin-left: 0;
+    margin-left: 59px;
+    margin-top: 10px;
   }
 }
 
@@ -198,8 +200,9 @@ body {
   color: var(--primery-text-color);
   fill: #afb1b8;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
   /*padding-top: 21px;
@@ -207,8 +210,11 @@ body {
   transition: color 250ms var(--o-transition-timing-function), fill 250ms var(--o-transition-timing-function);
 }
 
-.auth-nav .link:nth-child(1) {
-  padding-bottom: 10px;
+@media screen and (min-width: 1199px) {
+  .auth-nav .link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .auth-nav .link:hover,
@@ -236,7 +242,7 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -38px;
+    bottom: -32px;
     width: 100%;
     height: 4px;
     background: var(--address-color);
@@ -261,6 +267,7 @@ body {
   }
 }
 
+/* Мобильное модальное окно */
 .reserw {
   display: flex;
   flex-direction: column;
@@ -577,17 +584,26 @@ span.studio-two {
 
 .site__list {
   width: 450px;
+  padding-bottom: 30px;
+}
+
+.site__list:nth-child(4) {
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
   .site__list {
     width: 354px;
   }
+  .site__list:nth-child(n + 3) {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .site__list {
     width: 270px;
+    padding-bottom: 0;
   }
   .site__list:not(:last-child) {
     margin-right: 30px;
@@ -613,14 +629,9 @@ span.studio-two {
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
-/*@media screen and (min-width: 480px) and (max-width: 767px) {
-  .site__about {
-    padding-bottom: 30px;
-  }
-}*/
 @media screen and (min-width: 1200px) {
   .site__about {
     margin: 0;
@@ -1552,7 +1563,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .menu-container {
     display: flex;
-    width: 100%;
+    align-items: center;
     box-shadow: none;
     /*justify-content: space-between;
     flex-grow: 1;*/

@@ -32,12 +32,20 @@
 }
 .site__list {
   width: 450px;
+  padding-bottom: 30px;
+  &:nth-child(4) {
+    padding-bottom: 0;
+  }
 
   @media screen and (min-width: 768px) {
     width: 354px;
+    &:nth-child(n + 3) {
+      padding-bottom: 0;
+    }
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
+    padding-bottom: 0;
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -60,13 +68,8 @@
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
-/*@media screen and (min-width: 480px) and (max-width: 767px) {
-  .site__about {
-    padding-bottom: 30px;
-  }
-}*/
 
 @media screen and (min-width: 1200px) {
   .site__about {
