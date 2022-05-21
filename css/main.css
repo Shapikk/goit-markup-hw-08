@@ -175,13 +175,19 @@ body {
   .auth-nav {
     display: flex;
     padding-top: 32px;
-    padding-bottom: 22px;
+    padding-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-nav .item {
     margin-left: 71px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav .item {
+    margin-left: 270px;
   }
 }
 
@@ -545,7 +551,7 @@ span.studio-two {
 /* Секция 2,3 */
 @media screen and (min-width: 1200px) {
   .section-title {
-    padding-bottom: 0;
+    /*padding-bottom: 0;*/
   }
 }
 
