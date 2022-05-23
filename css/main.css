@@ -72,25 +72,22 @@ body {
 }
 
 .item {
-  padding-left: 40px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
   .item {
-    padding-left: 0;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
 .item:nth-child(3) {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .site-nav {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -273,7 +270,6 @@ body {
   flex-direction: column;
   margin: 0;
   /*position: relative;*/
-  margin-top: 302px;
 }
 
 @media screen and (min-width: 768px) {
@@ -284,11 +280,8 @@ body {
 
 .nav {
   display: flex;
-  margin: 0;
-  /*position: fixed;*/
-  margin-left: 40px;
   margin-top: 64px;
-  margin-bottom: 48px;
+  /*position: fixed;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -299,7 +292,6 @@ body {
 
 .items-tell {
   margin-bottom: 32px;
-  margin-left: 40px;
 }
 
 .tell {
@@ -309,11 +301,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--address-color);
   text-decoration: none;
-}
-
-.items-mail {
-  margin-bottom: 64px;
-  margin-left: 40px;
 }
 
 .mail {
@@ -1018,7 +1005,7 @@ span.studio-two {
 @media screen and (min-width: 1200px) {
   .follow-container {
     margin-top: 0;
-    padding-right: 93px;
+    margin-right: 93px;
   }
 }
 
@@ -1598,7 +1585,10 @@ textarea {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
 }
 
 @media screen and (max-width: 768px) {
