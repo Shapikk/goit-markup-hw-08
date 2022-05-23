@@ -32,20 +32,20 @@
 }
 .site__list {
   width: 450px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   &:nth-child(4) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 768px) {
     width: 354px;
     &:nth-child(n + 3) {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
-    padding-bottom: 0;
+    margin-bottom: 0;
     &:not(:last-child) {
       margin-right: 30px;
     }
